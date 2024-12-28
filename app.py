@@ -5,7 +5,7 @@ import uuid
 import threading
 from threading import Lock
 import time
-from prometheus_flask_exporter import PrometheusMetrics
+
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)

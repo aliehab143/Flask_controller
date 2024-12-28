@@ -5,12 +5,13 @@ import uuid
 import threading
 from threading import Lock
 import time
+import os
 
 
 app = Flask(__name__)
 
 # Kafka Configuration
-KAFKA_BROKER = 'kafka-1:9093'
+KAFKA_BROKER = os.environ.get('KAFKA_BROKER', 'localhost:9092')  # Default to localhost if not provided
 TOPICS = {
     'en2ar': 'translationEnToArabicRequest',
     'ar2en': 'translationArToEnRequest',

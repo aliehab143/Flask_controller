@@ -10,7 +10,7 @@ import time
 app = Flask(__name__)
 
 # Kafka Configuration
-KAFKA_BROKER = 'test-kafka-1:9093'
+KAFKA_BROKER = 'kafka-1:9093'
 TOPICS = {
     'en2ar': 'translationEnToArabicRequest',
     'ar2en': 'translationArToEnRequest',

@@ -1,5 +1,6 @@
 transformers
 confluent-kafka
 uuid
+Flask
 
 

@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose Kafka default port
-EXPOSE 9092
+EXPOSE 8200
 
 # Command to run the application
 CMD ["python", "app.py"]

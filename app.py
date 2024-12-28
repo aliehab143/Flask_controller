@@ -8,7 +8,7 @@ import time
 
 
 app = Flask(__name__)
-metrics = PrometheusMetrics(app)
+
 # Kafka Configuration
 KAFKA_BROKER = 'localhost:9092'
 TOPICS = {
